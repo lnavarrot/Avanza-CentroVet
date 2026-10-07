@@ -11,6 +11,3 @@ Thumbs.db
 
 .vscode/
 .idea/
-
-uploads/*
-!uploads/.gitkeep
