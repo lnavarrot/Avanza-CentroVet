@@ -31,5 +31,5 @@ define('APP_NAME', 'Avanza.CentroVet');
 
 define(
     'APP_URL',
-    'http://localhost:8080'
+    getenv('APP_URL') ?: 'http://localhost:8080'
 );
