@@ -8,11 +8,12 @@ $host = getenv('DB_HOST') ?: 'db';
 $db   = getenv('DB_NAME') ?: 'avanza_centrovet';
 $user = getenv('DB_USER') ?: 'avanza';
 $pass = getenv('DB_PASS') ?: 'avanza123';
+$port = getenv('DB_PORT') ?: '3306';
 
 try {
 
     $pdo = new PDO(
-        "mysql:host=$host;dbname=$db;charset=utf8mb4",
+        "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4",
         $user,
         $pass,
         [
